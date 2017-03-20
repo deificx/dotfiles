@@ -1,3 +1,4 @@
+aws/.aws/credentials
 backup/_keys/
 backup/_keys.tar.gz
 backup/_keys.tar.gz.asc
