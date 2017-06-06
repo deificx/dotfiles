@@ -3,10 +3,12 @@
 mkdir -p _keys/ssh
 mkdir -p _keys/gnupg
 mkdir -p _keys/tarsnap
+mkdir -p _keys/vpn
 
 cp ~/.ssh/* _keys/ssh/
 cp ~/.gnupg/pubring.gpg _keys/gnupg/
 cp ~/.gnupg/secring.gpg _keys/gnupg/
+cp ~/.vpn/* _keys/vpn/
 sudo cp /usr/local/etc/tarsnap.conf _keys/tarsnap/
 sudo cp /root/tarsnap.key _keys/tarsnap/
 sudo cp /root/tarsnap-backup.sh _keys/tarsnap/

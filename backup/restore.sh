@@ -5,9 +5,11 @@ sudo tar xzvf _keys.tar.gz
 
 mkdir -p ~/.ssh
 mkdir -p ~/.gnupg
+mkdir -p ~/.vpn
 
 cp _keys/ssh/* ~/.ssh
 cp _keys/gnupg/*.gpg ~/.gnupg
+cp _keys/vpn/*.gpg ~/.vpn
 
 sudo cp _keys/tarsnap/tarsnap.conf /usr/local/etc/
 sudo cp _keys/tarsnap/tarsnap.key /root/
