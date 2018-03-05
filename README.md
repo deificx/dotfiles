@@ -1,4 +1,4 @@
-# dotfiles
+# .files
 
 Personal preferences and backup strategy
 
