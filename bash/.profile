@@ -22,6 +22,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export NPM=~/npm-global/bin
+export DENO_INSTALL=~/.deno
 export GOPATH=$HOME/work/go
-export PATH=$NPM:$GOPATH/bin:/usr/local/go/bin:$PATH
-export PATH="$HOME/.cargo/bin:$HOME/.cargo/env:$PATH"
+
+export PATH="$NPM:$DENO_INSTALL/bin:$GOPATH/bin:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$PATH"
