@@ -8,6 +8,19 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+export NPM=~/npm-global/bin
+export DENO_INSTALL=~/.deno
+export GOPATH=$HOME/go
+
+YARN=$HOME/.config/yarn/global/node_modules/.bin/
+
+export PATH="$NPM:$YARN:$DENO_INSTALL/bin:$GOPATH/bin:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$PATH"
+
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -20,9 +33,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-export NPM=~/npm-global/bin
-export DENO_INSTALL=~/.deno
-export GOPATH=$HOME/work/go
-
-export PATH="$NPM:$DENO_INSTALL/bin:$GOPATH/bin:/usr/local/go/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$PATH"
